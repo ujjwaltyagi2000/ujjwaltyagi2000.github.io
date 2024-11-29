@@ -1,0 +1,14 @@
+@import "variables";
+@import "navbar";
+@import "sections";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: $background-color;
+  color: $text-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}

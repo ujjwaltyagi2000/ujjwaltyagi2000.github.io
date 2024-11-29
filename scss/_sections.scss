@@ -1,0 +1,40 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  color: $text-color;
+
+  &:nth-child(even) {
+    background: $primary-color;
+  }
+
+  &:nth-child(odd) {
+    background: $background-color;
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+    color: $accent-color;
+  }
+
+  p,
+  ul {
+    font-size: 1.2rem;
+    max-width: 800px;
+  }
+
+  a {
+    color: $accent-color;
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten($accent-color, 15%);
+    }
+  }
+}
