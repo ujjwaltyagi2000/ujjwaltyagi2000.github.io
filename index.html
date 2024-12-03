@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#about">About</a></li> -->
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -19,41 +19,96 @@
     </nav>
 
     <section id="home">
-      <h1>Welcome</h1>
+      <h1>Hi, I'm Ujjwal</h1>
       <p>
-        I'm Ujjwal Tyagi, an aspiring Data Scientist/Analyst passionate about
-        solving problems through data.
+        I'm an aspiring Data Scientist/Analyst passionate about solving problems
+        through data.
       </p>
     </section>
-
+    <!-- 
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hi, I'm Ujjwal Tyagi. I specialize in Python, SQL, and data analytics.
-        I'm dedicated to continuous learning and growth in the field of data
-        science.
+        I specialize in Python, SQL, and data analytics. I'm dedicated to
+        continuous learning and growth in the field of data science.
       </p>
-    </section>
+    </section> -->
 
     <section id="projects">
       <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div
+          class="project-tile"
+          onclick="document.querySelector('#flowlytics').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <img src="images/project1.jpg" alt="Flowlytics" />
+          <div class="overlay">Flowlytics</div>
+        </div>
+
+        <!-- Project 2 -->
+
+        <div
+          class="project-tile"
+          onclick="document.querySelector('#manthan').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <img src="images/project2.png" alt="Manthan" />
+          <div class="overlay">Manthan</div>
+        </div>
+
+        <!-- Project 3 -->
+        <div
+          class="project-tile"
+          onclick="document.querySelector('#vriddhi').scrollIntoView({ behavior: 'smooth' });"
+        >
+          <img src="images/project3.png" alt="Vriddhi" />
+          <div class="overlay">Vriddhi</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual Project Details -->
+
+    <section id="flowlytics">
+      <h3>Flowlytics</h3>
       <p>
-        <strong>Manthan:</strong> Comparative analysis of Lok Sabha election
-        results (2019 vs. 2024).
+        Flowlytics generates cash flow statements for a given company using
+        their balance sheet or P&L statement.
       </p>
-      <a href="https://github.com/yourusername/manthan" target="_blank"
-        >View on GitHub</a
-      >
+    </section>
+
+    <section id="manthan">
+      <h3>Manthan</h3>
+      <p>
+        Comparative analysis dashboard for Lok Sabha election results (2019 vs.
+        2024).
+      </p>
+    </section>
+
+    <section id="vriddhi">
+      <h3>Vriddhi</h3>
+      <p>
+        Vriddhi is a desktop application capable of enhancing the resolution of
+        an image or video file by 4x using Super Resolution.
+      </p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Pandas, NumPy</li>
-        <li>Data Visualization (Matplotlib, Seaborn)</li>
-        <li>Streamlit</li>
+        <li><strong>Programming Languages:</strong> Python, Javascript, C++</li>
+        <br />
+        <li>
+          <strong>Libraries/Frameworks:</strong> Pandas, NumPy, Matplotlib,
+          Streamlit, Selenium,
+        </li>
+        <li>PySpark, Plotly-Dash, OpenCV, TensorFlow, Scikit-Learn</li>
+        <br />
+        <li>
+          <strong>Tools / Platforms:</strong> Git, VSCode, Power BI, Tableau
+        </li>
+        <br />
+        <li><strong>Databases:</strong> SQL, MongoDB</li>
       </ul>
     </section>
 
@@ -64,7 +119,9 @@
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>Email: your-email@example.com</p>
+      <p>
+        Email: <a href="mailto:ujjwaltyagi28@gmail">ujjwaltyagi28@gmail.com</a>
+      </p>
       <p>
         Connect with me on:
         <a
