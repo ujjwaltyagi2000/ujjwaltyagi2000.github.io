@@ -18,6 +18,11 @@ body {
   background-color: var(--background);
   scroll-behavior: smooth;
   font-size: 18px; /* Increased font size */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
 }
 
 nav {
@@ -58,8 +63,14 @@ section {
   align-items: center;
   height: 100vh;
   text-align: center;
+  padding: 20px;
 }
 
+section p {
+  max-width: 1000px; /* Prevents text from stretching too wide */
+  margin: 0 auto; /* Centers the paragraph within the section */
+  padding: 0 20px; /* Adds space on left and right */
+}
 h1,
 h2,
 h3 {
