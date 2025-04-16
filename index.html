@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Ujjwal Tyagi | Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -26,6 +26,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="icon" href="path-to-your-icon.svg" type="image/svg+xml" /> -->
+
+    <link rel="icon" type="image/png" href="images/suitcase.png" />
   </head>
   <body>
     <nav>
@@ -33,7 +36,7 @@
         <li><a href="#home">Home</a></li>
         <!-- <li><a href="#about">About</a></li> -->
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills-section">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -42,18 +45,11 @@
     <section id="home">
       <h1>HI, I'M UJJWAL</h1>
       <p>
-        I'm an aspiring Data Scientist/Analyst passionate about solving problems
-        through data.
+        I'm an aspiring Data Scientist with a strong foundation in data
+        analysis, automation, and natural language processing (NLP). I enjoy
+        leveraging data to build intelligent, impactful solutions.
       </p>
     </section>
-    <!-- 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I specialize in Python, SQL, and data analytics. I'm dedicated to
-        continuous learning and growth in the field of data science.
-      </p>
-    </section> -->
 
     <section id="projects">
       <h2>Projects</h2>
@@ -93,46 +89,86 @@
     <section id="samarth">
       <h3>Samarth.AI</h3>
       <p>
-        Samarth.AI is an AI-powered Resume-Job Matcher that helps job seekers
-        assess how well their resume aligns with a given job description. Using
-        NLTK, LLMs, and TF-IDF, Samarth.AI analyzes resumes, extracts key
-        skills, and provides a match score with insights on missing skills.
+        Samarth.AI is an intelligent resume-job matcher built using NLP and
+        LLMs. It analyzes resumes, extracts skills, and compares them with job
+        descriptions to provide a relevance score, highlighting missing keywords
+        and offering insights to improve job alignment.
+      </p>
+      <br /><br />
+      <p>
+        🔗
+        <a href="https://samarth-ai.streamlit.app" target="_blank">Live Demo</a>
+        | 💻
+        <a href="https://github.com/ujjwaltyagi2000/samarth" target="_blank"
+          >GitHub Repo</a
+        >
       </p>
     </section>
 
     <section id="manthan">
       <h3>Manthan</h3>
       <p>
-        Comparative analysis dashboard for Lok Sabha election results (2019 vs.
-        2024).
+        Manthan is an interactive data analytics dashboard comparing the 2019
+        and 2024 Indian Lok Sabha elections. It includes insights on criminal
+        background, education, assets, and winning trends of candidates using
+        visualizations built with Plotly and Streamlit.
+      </p>
+      <br /><br />
+      <p>
+        💻
+        <a href="https://github.com/ujjwaltyagi2000/manthan" target="_blank"
+          >GitHub Repo</a
+        >
       </p>
     </section>
 
     <section id="vriddhi">
       <h3>Vriddhi</h3>
       <p>
-        Vriddhi is a desktop application capable of enhancing the resolution of
-        an image or video file by 4x using Super Resolution.
+        Vriddhi is a Python desktop application that enhances the resolution of
+        images and videos using AI-based Super Resolution techniques. It
+        supports 4x upscaling and is designed for both personal and professional
+        image enhancement tasks.
+      </p>
+      <br /><br />
+      <p>
+        💻
+        <a href="https://github.com/ujjwaltyagi2000/vriddhi" target="_blank"
+          >GitHub Repo</a
+        >
       </p>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, Javascript, C++</li>
-        <br />
-        <li>
-          <strong>Libraries/Frameworks:</strong> Pandas, NumPy, Matplotlib,
-          Streamlit, Selenium,
-        </li>
-        <li>PySpark, Plotly-Dash, OpenCV, TensorFlow, Scikit-Learn</li>
-        <br />
-        <li>
-          <strong>Tools / Platforms:</strong> Git, VSCode, Power BI, Tableau
-        </li>
-        <br />
-        <li><strong>Databases:</strong> SQL, MongoDB</li>
-      </ul>
+    <section id="skills-section">
+      <h2 class="skills-title">💻 Skills</h2>
+
+      <div class="skill-group">
+        <span>🧠 <strong>Languages:</strong> Python, JavaScript, C++</span>
+        <span
+          >🌐 <strong>Web & Automation:</strong> HTML, CSS, JS (Basics),
+          Selenium</span
+        >
+        <span>🛠️ <strong>Tools:</strong> Git, GitHub, VS Code</span>
+      </div>
+
+      <div class="skill-group">
+        <span
+          >📊 <strong>Data Analytics:</strong> Pandas, NumPy, Matplotlib,
+          Plotly, Seaborn</span
+        >
+        <span
+          >📈 <strong>Dashboards:</strong> Streamlit, Power BI, Tableau</span
+        >
+        <span>☁️ <strong>Cloud & Big Data:</strong> Supabase, PySpark</span>
+      </div>
+
+      <div class="skill-group">
+        <span
+          >🤖 <strong>ML & AI:</strong> Scikit-learn, TensorFlow, NLTK, OpenCV,
+          LLMs (OpenAI/Transformers)</span
+        >
+        <span>🗃️ <strong>Databases:</strong> SQL, MongoDB</span>
+      </div>
     </section>
 
     <section id="resume">

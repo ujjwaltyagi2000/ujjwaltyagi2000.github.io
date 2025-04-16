@@ -63,19 +63,33 @@ section {
   align-items: center;
   height: 100vh;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px; /* increased padding */
 }
 
-section p {
-  max-width: 1000px; /* Prevents text from stretching too wide */
-  margin: 0 auto; /* Centers the paragraph within the section */
-  padding: 0 20px; /* Adds space on left and right */
+section > * {
+  margin-bottom: 10px; /* adds spacing between child elements */
 }
 h1,
 h2,
 h3 {
   color: var(--accent);
   font-size: 2rem; /* Increased heading size */
+  margin-bottom: 1.2rem; /* adjust until it feels right */
+}
+
+section p,
+.project-description {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px; /* Add horizontal padding */
+  line-height: 1.6; /* Optional: improve readability */
+  text-align: center;
+}
+.project-text {
+  max-width: 800px;
+  padding: 0 40px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 /* Project Section */
@@ -124,6 +138,28 @@ h3 {
 
 .project-tile:hover .overlay {
   opacity: 1;
+}
+.skills-section {
+  color: #f9f9f9;
+  text-align: center;
+  padding: 5rem 1rem; /* Extra top padding for breathing space */
+  font-family: "Inter", sans-serif;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: #ff6e96;
+  margin-bottom: 3rem;
+}
+
+.skill-group {
+  margin-bottom: 2.5rem;
+  line-height: 2;
+}
+
+.skill-group span {
+  display: block;
+  font-size: 1.1rem;
 }
 
 #skills {
